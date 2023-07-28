@@ -2,7 +2,7 @@
 
 当前适配版本：tModLoader v1.4.4
 
-Bilibili 视频：TODO
+Bilibili 视频：[https://www.bilibili.com/video/BV1d94y1Y7Xu](https://www.bilibili.com/video/BV1d94y1Y7Xu)
 
 网盘下载：[https://pan.d8s.fun/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9AMod](https://pan.d8s.fun/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9AMod)
 
