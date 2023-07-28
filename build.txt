@@ -1,0 +1,3 @@
+displayName = 广西老表
+author = github.com/jerryshell
+version = 0.1
