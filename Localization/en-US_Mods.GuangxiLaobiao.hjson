@@ -1,0 +1,62 @@
+Items: {
+	GuilinMifen: {
+		DisplayName: 桂林米粉
+		Tooltip:
+			'''
+			所有属性大幅提升(60分钟)
+			移动速度和采矿速度提高20%(30分钟)
+			桂林米粉是桂林市的一道传统小吃，属于桂菜系；该菜品以早籼米和卤水为原料。
+			做出来的米粉本身淡而无味，美味的桂林米粉关键在卤水。
+			店家熬制的卤水都有各自的绝招，一般每家店都不同，而且一般不将配方外传，作为商业秘密。
+			'''
+	}
+
+	LiuzhouLuosifen: {
+		DisplayName: 柳州螺蛳粉
+		Tooltip:
+			'''
+			所有属性中幅提升(60分钟)
+			移动速度和采矿速度提高20%(12分钟)
+			广西柳州的风味小吃
+			由柳州特有的米粉，加上酸笋、木耳、花生、油炸豆皮、黄花菜、青菜等配料及适度的酸辣味和煮淡水石螺的汤水调合而成
+			具有酸、辣、鲜、爽、烫的风味及酸笋的特殊气味。
+			正宗的螺蛳粉不放螺蛳，只是汤用螺蛳熬成，好的螺蛳汤应清而不淡、麻而不燥、辣而不火、香而不腻。
+			'''
+	}
+
+	NanningLaoyoufen: {
+		DisplayName: 南宁老友粉
+		Tooltip:
+			'''
+			所有属性小幅提升(60分钟)
+			移动速度和采矿速度提高20%(5分钟)
+			南宁传统小吃的金字招牌，其口味鲜辣、汤料香浓，具有开胃解腻、驱风散寒、通窍醒脑的独特功效，属于桂菜。
+			'''
+	}
+
+	QiegewalaYinshouzhuo: {
+		DisplayName: 窃·格瓦拉的银手镯
+		Tooltip:
+			'''
+			生命再生提高 2 点/秒
+			"打工是不可能打工的，这辈子都不可能打工。"
+			'''
+	}
+}
+
+NPCs: {
+	GuangxiLaobiao: {
+		DisplayName: 广西老表
+
+		TownNPCMood: {
+			Content: 我很满足。
+			NoHome: 我讨厌没有家。
+			FarFromHome: 我离家太远了。
+			LoveSpace: 我非常喜欢有这么大的空间。
+			DislikeCrowded: 我不喜欢这么拥挤。
+			HateCrowded: 我讨厌这么拥挤。
+			LikeNPC_Princess: 我喜欢 {NPCName}。
+			Princess_LovesNPC: 我喜欢 {NPCName}。
+		}
+	}
+}

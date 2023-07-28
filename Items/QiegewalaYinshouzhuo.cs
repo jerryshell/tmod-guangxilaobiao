@@ -8,9 +8,7 @@ namespace GuangxiLaobiao.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("窃·格瓦拉的银手镯");
-            Tooltip.SetDefault("生命再生提高 2 点/秒\n\"打工是不可能打工的，这辈子都不可能打工。\"");
-            SacrificeTotal = 1;
+            Item.ResearchUnlockCount = 1;
         }
 
         public override void SetDefaults()

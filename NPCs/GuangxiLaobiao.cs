@@ -8,10 +8,10 @@ namespace GuangxiLaobiao.NPCs
     [AutoloadHead]
     public class GuangxiLaobiao : ModNPC
     {
+        public const string ShopName = "商店";
+
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("广西老表");
-
             Main.npcFrameCount[Type] = 25;
 
             NPCID.Sets.ExtraFramesCount[Type] = 9;
@@ -40,10 +40,11 @@ namespace GuangxiLaobiao.NPCs
             AnimationType = NPCID.Guide;
         }
 
-        public override bool CanTownNPCSpawn(int numTownNPCs, int money)
+        public override bool CanTownNPCSpawn(int numTownNPCs)
         {
             return true;
         }
+
 
         public override void SetChatButtons(ref string button, ref string button2)
         {
@@ -56,11 +57,11 @@ namespace GuangxiLaobiao.NPCs
             return "此处停车 = 走路回家";
         }
 
-        public override void OnChatButtonClicked(bool firstButton, ref bool shop)
+        public override void OnChatButtonClicked(bool firstButton, ref string shopName)
         {
             if (firstButton)
             {
-                shop = true;
+                shopName = ShopName;
             }
             else
             {
@@ -72,16 +73,27 @@ namespace GuangxiLaobiao.NPCs
             }
         }
 
-        public override void SetupShop(Chest shop, ref int nextSlot)
+        // public override void SetupShop(Chest shop, ref int nextSlot)
+        // {
+        //     shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.NanningLaoyoufen>(), false);
+        //     nextSlot++;
+        //     shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.LiuzhouLuosifen>(), false);
+        //     nextSlot++;
+        //     shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.GuilinMifen>(), false);
+        //     nextSlot++;
+        //     shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.QiegewalaYinshouzhuo>(), false);
+        //     nextSlot++;
+        // }
+
+        public override void AddShops()
         {
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.NanningLaoyoufen>(), false);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.LiuzhouLuosifen>(), false);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.GuilinMifen>(), false);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.QiegewalaYinshouzhuo>(), false);
-            nextSlot++;
+            var npcShop = new NPCShop(Type, ShopName)
+                .Add(ModContent.ItemType<Items.NanningLaoyoufen>())
+                .Add(ModContent.ItemType<Items.LiuzhouLuosifen>())
+                .Add(ModContent.ItemType<Items.GuilinMifen>())
+                .Add(ModContent.ItemType<Items.QiegewalaYinshouzhuo>());
+
+            npcShop.Register();
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
