@@ -4,9 +4,11 @@
 
 Bilibili 视频：TODO
 
-阿里云盘：[https://www.aliyundrive.com/s/K8hDR4aUCSA](https://www.aliyundrive.com/s/K8hDR4aUCSA)
+网盘下载：[https://pan.d8s.fun/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9AMod](https://pan.d8s.fun/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9AMod)
 
 Steam 订阅（还没过审，只能好友可见）：[https://steamcommunity.com/sharedfiles/filedetails/?id=3011074564](https://steamcommunity.com/sharedfiles/filedetails/?id=3011074564)
+
+## 介绍
 
 广西老表会在你建好第二个房间后入住（第一个房间要给向导）
 
